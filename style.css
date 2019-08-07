@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Caslon Text', serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 4em; 
+    flex-wrap: wrap;
+    background: #FDFBFC;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    text-transform: uppercase;
+    color: rgb(20,20,20);
+    letter-spacing: 5px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.nav-links li{
+    list-style: none;
+    letter-spacing: 3px;
+}
+
+.banner{
+    width: 100%;
+    height: 1000px;
+    background-image: url("/Users/Justin/Desktop/DevProjects/DemoWebsite/Resources/images/4928x3264-5395072-fog-mountain-cloud-peak-cloudy-monochrome-black-and-white-cloudscape-minimal-nature-outdoors-mist-landscape-minimalist-misty-cool-open-whitespace-white-view-free-pictures.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-details{
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 15%;
+    width: 30%;
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: left;
+    line-height: 3rem;
+
+}
+@media only screen and (max-width: 770px){
+    .banner-details{
+        font-size: 1rem;
+        width: 100%;
+        left: 0%;
+        top: 25%;
+        padding: 2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
